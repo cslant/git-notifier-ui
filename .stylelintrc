@@ -1,0 +1,13 @@
+{
+  "ignoreFiles": [
+    "src/style/scss/material-dashboard/_utilities.scss"
+  ],
+  "rules": {
+    "indentation": 2,
+    "max-empty-lines": 2,
+    "comment-empty-line-before": null,
+    "rule-empty-line-before": null,
+    "no-descending-specificity": null,
+    "no-eol-whitespace": null
+  }
+}
