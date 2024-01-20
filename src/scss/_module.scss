@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: $body_background;
+    font-family: $font-primary;
+}
+
+
+.git-notifier {
+
+    // sidebar
+    &-sidebar {
+        &__content {
+            background: $sidebar_background_light_mode;
+            transition: all .3s;
+            max-width: 1000px;
+            width: 190px;
+            height: calc(100vh - 40px);
+            box-shadow: $box_shadow;
+            border-radius: 8px;
+
+
+
+            &-head {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                top: 30px;
+            }
+
+            &-logo {
+                font-size: 22px;
+                font-weight: 700;
+                font-style: italic;
+                color: $primary_color;
+            }
+        }
+
+        &__list {
+            &-container {
+                margin-top: 40px;
+                list-style: none;
+                padding: 5px 0;
+            }
+
+            &-item {
+                margin: 25px 5px;
+                padding: 10px 35px;
+                cursor: pointer;
+                &:hover {
+                    border-radius: 5px;
+                    background-color: $primary_color;
+                }
+
+                a {
+                    color: $text_light_mode;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    // main-content
+
+    &-main-content {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        &__header {
+            width: calc(100vw - 60px - 190px);
+            height: 50px;
+            border-radius: 8px;
+            box-shadow: $box_shadow;
+            display: flex;
+            align-items: center;
+            transition: all .3s;
+            background-color: $sidebar_background_light_mode;
+        }
+
+        &__mode {
+            margin-left: auto;
+            margin-right: 10px;
+
+            input[type="checkbox"] {
+                display: none;
+            }
+
+            #switch {
+                position: relative;
+                display: block;
+                width: 70px;
+                height: 35px;
+                background-color: $dark_mode;
+                border-radius: 35px;
+                cursor: pointer;
+            }
+
+            #circle {
+                width: 8px;
+                height: 8px;
+                background-color: $text_dark_mode;
+                background-size: 65px;
+                position: relative;
+                top: 4px;
+                left: 5px;
+                border: 10px solid $text_dark_mode;
+                border-radius: 50px;
+                transition: 0.4s ease left, 0.4s ease background-position;
+                z-index: 2;
+            }
+
+            #lightMode,
+            #darkMode {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $text_dark_mode;
+                font-size: 10px;
+                font-weight: 600;
+                margin-left: 8px;
+                z-index: 1;
+            }
+
+            #darkMode {
+                margin-left: 40px;
+                text-align: right;
+            }
+
+            #toggleSystemMode:checked+#switch #circle {
+                left: 38px;
+            }
+
+            #toggleSystemMode:checked+#switch {
+                background: $light_mode;
+            }
+        }
+    }
+}

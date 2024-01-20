@@ -1,0 +1,29 @@
+[data-theme='dark'] {
+    .git-notifier {
+
+        // sidebar
+        &-sidebar {
+            &__content {
+                background: $sidebar_background_dark_mode;
+            }
+
+            &__list {
+
+                &-item {
+                    a {
+                        color: $text_dark_mode;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        &-main-content {
+
+            &__header {
+
+                background-color: $sidebar_background_dark_mode;
+            }
+        }
+    }
+}

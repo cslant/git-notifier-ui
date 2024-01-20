@@ -1,3 +1,4 @@
-body{
-    background-color: red;
-}
+@import 'font';
+@import 'variables.scss';
+@import 'module.scss';
+@import 'mode.scss';
