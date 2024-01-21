@@ -25,5 +25,7 @@
   ],
   "support": {
     "issues": "https://github.com/cslant/git-notifier-ui/issues"
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
