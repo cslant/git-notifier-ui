@@ -1,0 +1,51 @@
+{
+  "name": "cslant/git-notifier-ui",
+  "description": "UI for Git Notifier Packages",
+  "homepage": "https://github.com/cslant/git-notifier-ui",
+  "license": "MIT",
+  "keywords": [
+    "laravel-ui",
+    "nofiter-ui",
+    "git-notifier-ui",
+    "telegram-notifier-ui",
+    "lark-notifier-ui"
+  ],
+  "authors": [
+    {
+      "name": "Tan Nguyen",
+      "email": "tannp27@gmail.com",
+      "homepage": "https://tanhongit.com",
+      "role": "owner"
+    },
+    {
+      "name": "Thuan Tran",
+      "email": "thuankg1752@gmail.com",
+      "role": "developer"
+    }
+  ],
+  "devDependencies": {
+    "@webpack-cli/generators": "^3.0.7",
+    "css-loader": "^6.9.1",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.7.7",
+    "prettier": "^3.2.4",
+    "sass": "^1.70.0",
+    "sass-loader": "^13.3.3",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
