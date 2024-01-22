@@ -13,7 +13,6 @@ body {
     font-family: $font-primary;
 }
 
-
 .git-notifier {
 
     // sidebar
@@ -26,7 +25,6 @@ body {
             height: calc(100vh - 40px);
             box-shadow: $box_shadow;
             border-radius: 8px;
-
 
 
             &-head {
@@ -55,6 +53,7 @@ body {
                 margin: 25px 5px;
                 padding: 10px 35px;
                 cursor: pointer;
+
                 &:hover {
                     border-radius: 5px;
                     background-color: $primary_color;
@@ -138,11 +137,11 @@ body {
                 text-align: right;
             }
 
-            #toggleSystemMode:checked+#switch #circle {
+            #toggleSystemMode:checked + #switch #circle {
                 left: 38px;
             }
 
-            #toggleSystemMode:checked+#switch {
+            #toggleSystemMode:checked + #switch {
                 background: $light_mode;
             }
         }
