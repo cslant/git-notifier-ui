@@ -46,6 +46,7 @@
     "serve": "webpack serve"
   },
   "dependencies": {
+    "html-loader": "^5.0.0",
     "node-sass": "^9.0.0"
   }
 }
